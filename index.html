@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  
+  <header>
+    <div class="header">
+    <h1>Memory Game!</h1>
+    </div>
+   
+  </header>
+  <div class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/200?random=1" alt="card">
+
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=2" alt="card">
+      
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=3" alt="card">
+      
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=4" alt="card">
+      
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=5" alt="card">
+      
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=6" alt="card">
+      
+      
+    </div>
+     <div class="card">
+      <img src="https://picsum.photos/200?random=7" alt="card">
+      
+      
+    </div>
+     
+    <div class="card">
+      <img src="https://picsum.photos/200?random=8" alt="card">
+      
+    
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=9" alt="card">
+      
+      
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200?random=10" alt="card">
+      
+      
+    </div>
+     <div class="card">
+      <img src="https://picsum.photos/200?random=11" alt="card">
+      
+     
+    </div>
+     
+    <div class="card">
+      <img src="https://picsum.photos/200?random=12" alt="card">
+      
+      
+    </div>
+  </div>
+  <div class="modal-outer">
+    <div class="modal-inner">
+      <p>TEsting 123</p>
+    </div>
+  </div>
+
+  
+  </div>
+
+  <style>
+
+  .header {
+    text-align: center;
+    padding-top: 3rem;
+  }
+    .cards {
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 15px;
+      padding: 2rem;
+    }
+
+    .card {
+      background: black;
+      border-radius: 2px;
+    }
+
+    .card img {
+      width: 100%;
+      length: 100%;
+    }
+
+
+    .modal-outer {
+      display: grid;
+      background: hsla(186, 100%, 50%, .7);
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      /* Hide this modal until we need it */
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    .modal-outer img {
+      width: 100%;
+    }
+
+    .modal-outer.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-inner {
+      max-width: 600px;
+      min-width: 400px;
+      padding: 2rem;
+      border-radius: 5px;
+    
+      min-height: 50px;
+      background: white;
+      transform: translateY(-200%);
+      transition: transform 2s;
+    }
+
+    .modal-outer.open .modal-inner {
+      transform: translateY(0);
+    }
+
+    .footer {
+    text-align: center;
+    padding-top: 3rem;
+    }
+  </style>
+
+    <script src="script.js"></script>
+  </body>
+  <div class="footer">
+    <h4> 2020 annaspencerdev@gmail.com<h4>
+  </div>
+</html>
+
+
